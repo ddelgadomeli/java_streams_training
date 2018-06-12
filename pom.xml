@@ -11,29 +11,6 @@
 	<name>Java Streams Training</name>
 	<description>Java Streams Training</description>
 
-	<repositories>
-		<repository>
-			<id>central</id>
-			<url>https://repo1.maven.org/maven2</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository>
-		<repository>
-			<id>Arquitectura</id>
-			<url>http://git.ml.com/nexus/content/groups/Arquitectura</url>
-		</repository>
-		<repository>
-			<id>arquitectura.releases</id>
-			<url>http://git.ml.com/nexus/content/repositories/releases</url>
-		</repository>
-		<repository>
-			<id>arquitectura_grails</id>
-			<name>Nexus Arquitectura</name>
-			<url>http://git.ml.com/nexus/content/repositories/MLGrailsPlugins</url>
-		</repository>
-	</repositories>
-
 	<build>
 		<finalName>java_streams_training</finalName>
 
@@ -42,56 +19,14 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>${java.compiler.version}</source>
-					<target>${java.compiler.version}</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<optimize>true</optimize>
 				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-params</artifactId>
-			<version>5.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.vintage</groupId>
-			<artifactId>junit-vintage-engine</artifactId>
-			<version>5.2.0</version>
-		</dependency>
-
-		<!-- jackson -->
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.9.5</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-core</artifactId>
-			<version>2.9.5</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.module</groupId>
-			<artifactId>jackson-module-afterburner</artifactId>
-			<version>2.9.5</version>
-		</dependency>
 	</dependencies>
 </project>
